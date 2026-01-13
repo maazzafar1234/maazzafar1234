@@ -1,3 +1,4 @@
+# 💫 About Me:
 I’m an ASE at Hexaview Technologies who loves turning ideas into smooth, scalable, and maintainable web experiences using React, JavaScript, Node.js, and Express. Basically I enjoy building things that work beautifully and don’t break randomly at 2 AM. 😄 I’m all about clean UI, fast performance, and writing code that’s easy for teams to understand (future-me included). From crafting reusable components to designing secure APIs, I like solving real problems with a mix of logic, structure, and just the right amount of “let’s refactor this properly” energy—because messy code deserves a second chance too. 🚀✨
 
 
