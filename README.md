@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="banner.svg (1)">
-  <source media="(prefers-color-scheme: light)" srcset="banner-light.svg (1)">
-  <img src="banner.svg (1)" alt="Maaz Zafar - Shadow Coder Banner" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="banner (2).svg">
+  <source media="(prefers-color-scheme: light)" srcset="banner-light (1).svg">
+  <img src="banner (2).svg" alt="Maaz Zafar - Shadow Coder Banner" width="100%">
 </picture>
 
 <br>
