@@ -65,7 +65,7 @@ I'm an **ASE at Hexaview Technologies**, moving quietly through codebases and le
 ## 🏆 Trophy Wall
 
 <div align="center">
-<img src="trophies.svg(1)" alt="Trophy Wall" width="100%">
+<img src="trophies (1).svg" alt="Trophy Wall" width="100%">
 </div>
 
 <br>
