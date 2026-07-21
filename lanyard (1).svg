@@ -92,8 +92,6 @@
         <rect x="54" y="0" width="2" height="24"/><rect x="58" y="0" width="1" height="24"/>
         <rect x="61" y="0" width="3" height="24"/><rect x="66" y="0" width="1" height="24"/>
         <rect x="69" y="0" width="2" height="24"/><rect x="73" y="0" width="3" height="24"/>
-      </g>
-      <text x="0" y="290" text-anchor="middle" font-size="8" fill="#666" letter-spacing="1">— drag me… just kidding, I'm an SVG —</text>
-    </g>
+
   </g>
 </svg>
