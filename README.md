@@ -30,7 +30,7 @@ I'm an **ASE at Hexaview Technologies**, moving quietly through codebases and le
 ## 🎴 ID Badge
 
 <div align="center">
-<img src="lanyard.svg(1)" alt="Ninja ID Badge" width="260">
+<img src="lanyard (1).svg" alt="Ninja ID Badge" width="260">
 </div>
 
 <br>
@@ -56,8 +56,8 @@ I'm an **ASE at Hexaview Technologies**, moving quietly through codebases and le
 ## 📊 Shadow Stats & Graphs
 
 <div align="center">
-<img src="stats.svg(1)" alt="Shadow Stats" width="49%">
-<img src="langs.svg(1)" alt="Weapons of Choice" width="49%">
+<img src="stats (1).svg" alt="Shadow Stats" width="49%">
+<img src="langs (1).svg" alt="Weapons of Choice" width="49%">
 </div>
 
 <br>
