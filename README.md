@@ -88,7 +88,7 @@ I'm an **ASE at Hexaview Technologies**, moving quietly through codebases and le
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/Connect-000000?style=for-the-badge&logo=linkedin&logoColor=ff1e3c)](https://linkedin.com/in/maazzafar)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=ff1e3c)](https://linkedin.com/in/maazzafar)
 [![GitHub](https://img.shields.io/badge/Follow-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/maazzafar1234)
 [![Buy Me a Coffee](https://img.shields.io/badge/Fuel%20the%20Grind-000000?style=for-the-badge&logo=buy-me-a-coffee&logoColor=ff1e3c)](https://buymeacoffee.com/maazzafar)
 
