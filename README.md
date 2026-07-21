@@ -30,7 +30,7 @@ I'm an **ASE at Hexaview Technologies**, moving quietly through codebases and le
 ## 🎴 ID Badge
 
 <div align="center">
-<img src="lanyard.svg" alt="Ninja ID Badge" width="260">
+<img src="lanyard (1).svg" alt="Ninja ID Badge" width="260">
 </div>
 
 <br>
