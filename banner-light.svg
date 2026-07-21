@@ -1,0 +1,114 @@
+<svg width="1280" height="400" viewBox="0 0 1280 400" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Fira Code',monospace">
+  <defs>
+    <linearGradient id="bgGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7f2f2"/>
+      <stop offset="55%" stop-color="#f4e6e7"/>
+      <stop offset="100%" stop-color="#f1dde0"/>
+    </linearGradient>
+    <linearGradient id="nameGradL" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c8102e">
+        <animate attributeName="stop-color" values="#c8102e;#e0102a;#8c0c1f;#c8102e" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#1a1a1a">
+        <animate attributeName="stop-color" values="#1a1a1a;#3a0a10;#1a1a1a" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#8c0c1f">
+        <animate attributeName="stop-color" values="#8c0c1f;#c8102e;#5c0714;#8c0c1f" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <clipPath id="typeClip1L">
+      <rect x="0" y="0" width="0" height="40">
+        <animate attributeName="width" values="0;520;520" keyTimes="0;0.35;1" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="typeClip2L">
+      <rect x="0" y="0" width="0" height="60">
+        <animate attributeName="width" values="0;0;900;900" keyTimes="0;0.35;0.75;1" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <linearGradient id="scanGradL" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c8102e" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#c8102e" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#c8102e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="400" fill="url(#bgGradL)"/>
+
+  <g stroke="#c8102e" stroke-opacity="0.08">
+    <path d="M0 100 H1280 M0 200 H1280 M0 300 H1280"/>
+    <path d="M320 0 V400 M640 0 V400 M960 0 V400"/>
+  </g>
+
+  <g stroke="#c8102e" stroke-width="2" opacity="0.6">
+    <line x1="40" y1="345" x2="420" y2="315">
+      <animate attributeName="opacity" values="0;0.6;0.6" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <g transform="translate(48,90)">
+    <text x="0" y="0" font-size="22" fill="#1a7a3c">maaz<tspan fill="#666">@</tspan>shadow-dev<tspan fill="#666">:~$</tspan></text>
+    <g clip-path="url(#typeClip1L)">
+      <text x="230" y="0" font-size="22" fill="#1a1a1a">whoami --ninja</text>
+    </g>
+    <rect x="510" y="-18" width="3" height="24" fill="#c8102e">
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" begin="0.2s"/>
+    </rect>
+  </g>
+
+  <g transform="translate(48,175)">
+    <g clip-path="url(#typeClip2L)">
+      <text x="0" y="0" font-size="64" font-weight="700" fill="url(#nameGradL)">Maaz Zafar</text>
+    </g>
+  </g>
+
+  <g transform="translate(48,220)" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.72;0.85;1" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+    <text x="0" y="0" font-size="20" fill="#8c0c1f">&lt;/&gt; Full-Stack Ninja</text>
+    <text x="260" y="0" font-size="20" fill="#999">|</text>
+    <text x="280" y="0" font-size="20" fill="#8c0c1f">Java + React</text>
+    <text x="470" y="0" font-size="20" fill="#999">|</text>
+    <text x="490" y="0" font-size="20" fill="#8c0c1f">API Integration</text>
+  </g>
+
+  <g transform="translate(48,265)" opacity="0">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.85;1" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+    <text x="0" y="0" font-size="16" fill="#5a4a4a" font-style="italic">"I don't break builds at 2AM. I strike once, and it works."</text>
+  </g>
+
+  <g transform="translate(48,300)" font-size="13" font-weight="600">
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.9;1" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+      <rect x="0" y="0" width="90" height="28" rx="6" fill="#fff" stroke="#c8102e" stroke-opacity="0.5"/>
+      <text x="45" y="19" fill="#8c0c1f" text-anchor="middle">JAVA</text>
+      <rect x="102" y="0" width="100" height="28" rx="6" fill="#fff" stroke="#c8102e" stroke-opacity="0.5"/>
+      <text x="152" y="19" fill="#8c0c1f" text-anchor="middle">REACT</text>
+      <rect x="214" y="0" width="120" height="28" rx="6" fill="#fff" stroke="#c8102e" stroke-opacity="0.5"/>
+      <text x="274" y="19" fill="#8c0c1f" text-anchor="middle">NODE.JS</text>
+      <rect x="346" y="0" width="130" height="28" rx="6" fill="#fff" stroke="#c8102e" stroke-opacity="0.5"/>
+      <text x="411" y="19" fill="#8c0c1f" text-anchor="middle">JAVASCRIPT</text>
+      <rect x="488" y="0" width="90" height="28" rx="6" fill="#fff" stroke="#c8102e" stroke-opacity="0.5"/>
+      <text x="533" y="19" fill="#8c0c1f" text-anchor="middle">SQL</text>
+    </g>
+  </g>
+
+  <g transform="translate(1080,60)">
+    <g fill="#c8102e" opacity="0.75">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="8s" repeatCount="indefinite"/>
+      <path d="M0,-16 L5,-5 L16,0 L5,5 L0,16 L-5,5 L-16,0 L-5,-5 Z"/>
+    </g>
+  </g>
+  <g transform="translate(1150,120) scale(0.6)">
+    <g fill="#c8102e" opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="6s" repeatCount="indefinite"/>
+      <path d="M0,-16 L5,-5 L16,0 L5,5 L0,16 L-5,5 L-16,0 L-5,-5 Z"/>
+    </g>
+  </g>
+
+  <rect x="0" y="0" width="1280" height="18" fill="url(#scanGradL)">
+    <animate attributeName="y" values="-18;400" dur="1.6s" begin="0s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.9;1" dur="1.6s" begin="0s" fill="freeze"/>
+  </rect>
+
+  <rect x="1" y="1" width="1278" height="398" fill="none" stroke="#c8102e" stroke-opacity="0.3" stroke-width="1"/>
+</svg>

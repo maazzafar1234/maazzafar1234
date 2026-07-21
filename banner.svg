@@ -1,0 +1,196 @@
+<svg width="1280" height="400" viewBox="0 0 1280 400" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Fira Code',monospace">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0c"/>
+      <stop offset="55%" stop-color="#120608"/>
+      <stop offset="100%" stop-color="#1a0509"/>
+    </linearGradient>
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff1e3c">
+        <animate attributeName="stop-color" values="#ff1e3c;#ff5c72;#e0102a;#ff1e3c" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#ffffff">
+        <animate attributeName="stop-color" values="#ffffff;#ffd6da;#ffffff" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#e0102a">
+        <animate attributeName="stop-color" values="#e0102a;#ff1e3c;#7a0d1a;#e0102a" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <radialGradient id="glowSpot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff1e3c" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ff1e3c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff1e3c" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ff1e3c" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ff1e3c" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="typeClip1">
+      <rect x="0" y="0" width="0" height="40">
+        <animate attributeName="width" values="0;520;520" keyTimes="0;0.35;1" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="typeClip2">
+      <rect x="0" y="0" width="0" height="60">
+        <animate attributeName="width" values="0;0;900;900" keyTimes="0;0.35;0.75;1" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect width="1280" height="400" fill="url(#bgGrad)"/>
+  <rect width="1280" height="400" fill="url(#glowSpot)"/>
+
+  <!-- faint grid texture -->
+  <g stroke="#ff1e3c" stroke-opacity="0.05">
+    <path d="M0 100 H1280 M0 200 H1280 M0 300 H1280"/>
+    <path d="M320 0 V400 M640 0 V400 M960 0 V400"/>
+  </g>
+
+  <!-- katana slash accent -->
+  <g stroke="#ff1e3c" stroke-width="2" opacity="0.7" filter="url(#softGlow)">
+    <line x1="40" y1="345" x2="420" y2="315">
+      <animate attributeName="opacity" values="0;0.7;0.7" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- terminal line 1: prompt + whoami -->
+  <g transform="translate(48,90)">
+    <text x="0" y="0" font-size="22" fill="#6bff8f">maaz<tspan fill="#888">@</tspan>shadow-dev<tspan fill="#888">:~$</tspan></text>
+    <g clip-path="url(#typeClip1)">
+      <text x="230" y="0" font-size="22" fill="#f2f2f2">whoami --ninja</text>
+    </g>
+    <rect x="510" y="-18" width="3" height="24" fill="#ff1e3c">
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" begin="0.2s"/>
+    </rect>
+  </g>
+
+  <!-- Name, revealed after typing -->
+  <g transform="translate(48,175)">
+    <g clip-path="url(#typeClip2)">
+      <text x="0" y="0" font-size="64" font-weight="700" fill="url(#nameGrad)" filter="url(#softGlow)">Maaz Zafar</text>
+    </g>
+  </g>
+
+  <!-- role line, fades in later -->
+  <g transform="translate(48,220)" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.72;0.85;1" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+    <text x="0" y="0" font-size="20" fill="#ff8a97">&lt;/&gt; Full-Stack Ninja</text>
+    <text x="260" y="0" font-size="20" fill="#888">|</text>
+    <text x="280" y="0" font-size="20" fill="#ff8a97">Java + React</text>
+    <text x="470" y="0" font-size="20" fill="#888">|</text>
+    <text x="490" y="0" font-size="20" fill="#ff8a97">API Integration</text>
+  </g>
+
+  <!-- tagline -->
+  <g transform="translate(48,265)" opacity="0">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.85;1" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+    <text x="0" y="0" font-size="16" fill="#c9c9c9" font-style="italic">"I don't break builds at 2AM. I strike once, and it works."</text>
+  </g>
+
+  <!-- animated tag chips -->
+  <g transform="translate(48,300)" font-size="13" font-weight="600">
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.9;1" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+      <rect x="0" y="0" width="90" height="28" rx="6" fill="#160406" stroke="#ff1e3c" stroke-opacity="0.6"/>
+      <text x="45" y="19" fill="#ff8a97" text-anchor="middle">JAVA</text>
+      <rect x="102" y="0" width="100" height="28" rx="6" fill="#160406" stroke="#ff1e3c" stroke-opacity="0.6"/>
+      <text x="152" y="19" fill="#ff8a97" text-anchor="middle">REACT</text>
+      <rect x="214" y="0" width="120" height="28" rx="6" fill="#160406" stroke="#ff1e3c" stroke-opacity="0.6"/>
+      <text x="274" y="19" fill="#ff8a97" text-anchor="middle">NODE.JS</text>
+      <rect x="346" y="0" width="130" height="28" rx="6" fill="#160406" stroke="#ff1e3c" stroke-opacity="0.6"/>
+      <text x="411" y="19" fill="#ff8a97" text-anchor="middle">JAVASCRIPT</text>
+      <rect x="488" y="0" width="90" height="28" rx="6" fill="#160406" stroke="#ff1e3c" stroke-opacity="0.6"/>
+      <text x="533" y="19" fill="#ff8a97" text-anchor="middle">SQL</text>
+    </g>
+  </g>
+
+  <!-- shuriken decorations (flicker like a light neon sign) -->
+  <g transform="translate(1080,60)" filter="url(#softGlow)">
+    <g fill="#ff1e3c" opacity="0.9">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="8s" repeatCount="indefinite"/>
+      <path d="M0,-16 L5,-5 L16,0 L5,5 L0,16 L-5,5 L-16,0 L-5,-5 Z"/>
+    </g>
+  </g>
+  <g transform="translate(1150,120) scale(0.6)" filter="url(#softGlow)">
+    <g fill="#ff1e3c" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="6s" repeatCount="indefinite"/>
+      <path d="M0,-16 L5,-5 L16,0 L5,5 L0,16 L-5,5 L-16,0 L-5,-5 Z"/>
+    </g>
+  </g>
+  <g transform="translate(1030,150) scale(0.4)" filter="url(#softGlow)">
+    <g fill="#ff1e3c" opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="10s" repeatCount="indefinite"/>
+      <path d="M0,-16 L5,-5 L16,0 L5,5 L0,16 L-5,5 L-16,0 L-5,-5 Z"/>
+    </g>
+  </g>
+
+  <!-- ember particles -->
+  <g fill="#ff1e3c">
+    <circle cx="900" cy="350" r="2" opacity="0.7">
+      <animate attributeName="cy" values="350;40" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="980" cy="380" r="1.5" opacity="0.6">
+      <animate attributeName="cy" values="380;60" dur="6.5s" repeatCount="indefinite" begin="1s"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="6.5s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle cx="1050" cy="360" r="2" opacity="0.5">
+      <animate attributeName="cy" values="360;30" dur="4.5s" repeatCount="indefinite" begin="0.5s"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="4.5s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle cx="820" cy="370" r="1.5" opacity="0.5">
+      <animate attributeName="cy" values="370;70" dur="7s" repeatCount="indefinite" begin="2s"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="7s" repeatCount="indefinite" begin="2s"/>
+    </circle>
+  </g>
+
+  <!-- hologram avatar reveal: hexagon frame with top-to-bottom scan revealing avatar.png -->
+  <defs>
+    <clipPath id="hexAvatarClip">
+      <polygon points="1080,120 1145,158 1145,234 1080,272 1015,234 1015,158"/>
+    </clipPath>
+    <clipPath id="hexScanClip">
+      <rect x="1005" y="110" width="150" height="0">
+        <animate attributeName="height" values="0;0;170;170" keyTimes="0;0.45;0.85;1" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+  <g transform="translate(0,0)">
+    <g clip-path="url(#hexScanClip)">
+      <g clip-path="url(#hexAvatarClip)">
+        <image href="avatar.png" x="1000" y="105" width="180" height="180" preserveAspectRatio="xMidYMid slice"/>
+        <rect x="1000" y="105" width="180" height="180" fill="#ff1e3c" opacity="0.08"/>
+      </g>
+    </g>
+    <polygon points="1080,120 1145,158 1145,234 1080,272 1015,234 1015,158" fill="none" stroke="#ff1e3c" stroke-width="2" opacity="0.9" filter="url(#softGlow)"/>
+    <polygon points="1080,120 1145,158 1145,234 1080,272 1015,234 1015,158" fill="none" stroke="#ff1e3c" stroke-width="1" opacity="0.4">
+      <animateTransform attributeName="transform" type="scale" values="1;1.06;1" dur="3s" repeatCount="indefinite" additive="sum"/>
+    </polygon>
+    <!-- scanning laser line during reveal -->
+    <rect x="1005" y="110" width="150" height="4" fill="#ff1e3c" opacity="0.9" filter="url(#softGlow)">
+      <animate attributeName="y" values="110;110;280;280" keyTimes="0;0.45;0.85;1" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.45;0.8;0.85" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <text x="1080" y="300" text-anchor="middle" font-size="11" fill="#ff8a97" letter-spacing="2" opacity="0" font-weight="700">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.85;1" dur="6s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+    SHADOW ID: 0920
+  </text>
+
+  <!-- top-to-bottom scanner sweep on load -->
+  <rect x="0" y="0" width="1280" height="18" fill="url(#scanGrad)">
+    <animate attributeName="y" values="-18;400" dur="1.6s" begin="0s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.9;1" dur="1.6s" begin="0s" fill="freeze"/>
+  </rect>
+
+  <!-- border frame -->
+  <rect x="1" y="1" width="1278" height="398" fill="none" stroke="#ff1e3c" stroke-opacity="0.35" stroke-width="1"/>
+</svg>
