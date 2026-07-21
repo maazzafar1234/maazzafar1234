@@ -3,7 +3,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="banner (3).svg">
   <source media="(prefers-color-scheme: light)" srcset="banner-light (2).svg">
-  <img src="banner (2).svg" alt="Maaz Zafar - Shadow Coder Banner" width="100%">
+  <img src="banner (3).svg" alt="Maaz Zafar - Shadow Coder Banner" width="100%">
 </picture>
 
 <br>
