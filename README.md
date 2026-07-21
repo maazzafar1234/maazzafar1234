@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="banner.svg">
-  <source media="(prefers-color-scheme: light)" srcset="banner-light.svg">
-  <img src="banner.svg" alt="Maaz Zafar - Shadow Coder Banner" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="banner.svg(1)">
+  <source media="(prefers-color-scheme: light)" srcset="banner-light.svg(1)">
+  <img src="banner.svg(1)" alt="Maaz Zafar - Shadow Coder Banner" width="100%">
 </picture>
 
 <br>
@@ -30,7 +30,7 @@ I'm an **ASE at Hexaview Technologies**, moving quietly through codebases and le
 ## 🎴 ID Badge
 
 <div align="center">
-<img src="lanyard.svg" alt="Ninja ID Badge" width="260">
+<img src="lanyard.svg(1)" alt="Ninja ID Badge" width="260">
 </div>
 
 <br>
@@ -56,8 +56,8 @@ I'm an **ASE at Hexaview Technologies**, moving quietly through codebases and le
 ## 📊 Shadow Stats & Graphs
 
 <div align="center">
-<img src="stats.svg" alt="Shadow Stats" width="49%">
-<img src="langs.svg" alt="Weapons of Choice" width="49%">
+<img src="stats.svg(1)" alt="Shadow Stats" width="49%">
+<img src="langs.svg(1)" alt="Weapons of Choice" width="49%">
 </div>
 
 <br>
@@ -65,7 +65,7 @@ I'm an **ASE at Hexaview Technologies**, moving quietly through codebases and le
 ## 🏆 Trophy Wall
 
 <div align="center">
-<img src="trophies.svg" alt="Trophy Wall" width="100%">
+<img src="trophies.svg(1)" alt="Trophy Wall" width="100%">
 </div>
 
 <br>
